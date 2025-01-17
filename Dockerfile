@@ -8,6 +8,8 @@ LABEL "repository"="https://github.com/bacongobbler/azure-blob-storage-upload"
 LABEL "homepage"="https://github.com/bacongobbler/azure-blob-storage-upload"
 LABEL "maintainer"="Matthew Fisher <matt.fisher@fishworks.io>"
 
+RUN tdnf install -y azcopy
+
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x entrypoint.sh
 
